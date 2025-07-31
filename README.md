@@ -40,3 +40,24 @@ Veri Seti: [7,3,5,8,2,9,4,15,6] Adımlar:
 [2,3,4,8,7,9,5,15,6]
 
 [2,3,4,5,7,9,8,15,6]
+
+
+Merge Sort Aşamaları:
+Diziyi ikiye böl: [16, 21, 11] ve [8, 12, 22]
+
+Alt dizileri tekrar böl: [16], [21, 11] ve [8], [12, 22]
+
+Alt dizileri tekrar böl: [21], [11] ve [12], [22]
+
+Alt dizileri sıralayıp birleştir: [21, 11] → [11, 21] [12, 22] → [12, 22]
+
+Birleştir: [16] ve [11, 21] → [11, 16, 21] [8] ve [12, 22] → [8, 12, 22]
+
+Son birleştirme: [11, 16, 21] ve [8, 12, 22] → [8, 11, 12, 16, 21, 22]
+
+⏱️ Big-O Gösterimi:
+Worst Case: \O(n \\log n) \
+
+Best Case: \O(n \\log n) \
+
+Average Case: \O(n \\log n) \
