@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fatma Nur – YKS'nin Yıldızı 💫</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #d0f4de, #e6ffe6);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #2b4738;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #38b000;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #007f5f;
+      margin-top: 15px;
+      font-size: 2.2em;
+    }
+
+    .bio {
+      max-width: 700px;
+      margin: 20px auto;
+      background: #f0fff0;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .bio p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .bio ul {
+      margin-top: 15px;
+      padding-left: 20px;
+      font-size: 1.1em;
+    }
+
+    .surprise-box {
+      width: 240px;
+      height: 240px;
+      background-color: #80ed99;
+      border: 5px dashed #38b000;
+      border-radius: 20px;
+      margin: 50px auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .surprise-box:hover {
+      transform: scale(1.05);
+      background-color: #007f5f;
+    }
+
+    #message {
+      text-align: center;
+      font-size: 1.4em;
+      color: #155d27;
+      margin-top: 20px;
+      min-height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://uploads.onecompiler.io/43n983m95/43n98356z/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-06-19%20225610.png" alt="Fatma Nur">
+    <h1>Fatma Nur 🌿</h1>
+    <p>YKS’ye doğru yeşil ışıkla geçiyor! 💚</p>
+  </header>
+
+  <div class="bio">
+    <p><strong>Fatma Nur kim mi?</strong></p>
+    <p>Bir Galatasaray aşığı, bir gezi tutkunu, bir influencer adayı ve en önemlisi: sınavları bile gülümseten biri!</p>
+    <ul>
+      <li>💛❤️ Cimbom’un sadık fanı</li>
+      <li>🌍 Gezmeyi, keşfetmeyi sever</li>
+      <li>📸 Geleceğin influencerı vibes</li>
+      <li>😄 Gülümsemesiyle moral verir</li>
+      <li>📚 YKS’ye hazır, kalbi kocaman!</li>
+    </ul>
+  </div>
+
+  <div class="surprise-box" onclick="showSurprise()">🎁 Sürpriz Kutusu</div>
+  <div id="message"></div>
+
+  <!-- Konfeti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const messages = [
+      "Fatma Nur YKS'yi değil, hayatı fethediyor! 👑",
+      "GS ruhu sende, zafer senin kaderin! 🦁",
+      "Influencerlar kralicesi geliyor! 📸",
+      "Senin enerjin, sınav kağıdını bile aydınlatır 💡",
+      "Bu sınav senin gücünü ölçemez! 💥",
+      "Sen çalıştın, gerisi zaten mucize ✨"
+    ];
+
+    function showSurprise() {
+      confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.6 }
+      });
+
+      const message = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("message").innerText = message;
+    }
+  </script>
+
+</body>
+</html>
