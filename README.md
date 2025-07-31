@@ -61,3 +61,40 @@ Worst Case: \O(n \\log n) \
 Best Case: \O(n \\log n) \
 
 Average Case: \O(n \\log n) \
+
+
+
+Binary Search Tree Aşamaları
+Veri Seti: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] İlk Eleman (Root): 7 → root 7'dir.
+
+🔧 BST Oluşum Aşamaları:
+5 < 7 → 7’nin soluna 5 yerleşir.
+
+1 < 5 → 5’in soluna 1 yerleşir.
+
+8 > 7 → 7’nin sağına 8 yerleşir.
+
+3 > 1 → 1’in sağına 3 yerleşir.
+
+6 > 5 → 5’in sağına 6 yerleşir.
+
+0 < 1 → 1’in soluna 0 yerleşir.
+
+9 > 8 → 8’in sağına 9 yerleşir.
+
+4 > 3 → 3’ün sağına 4 yerleşir.
+
+2 < 3 → 2, 3’ün soluna yerleşir.
+
+📌 Sonuç Açıklaması:
+Root 7'dir.
+
+7’nin solunda 5, sağında 8 bulunur.
+
+5’in solunda 1, sağında 6 bulunur.
+
+1’in solunda 0, sağında 3 bulunur.
+
+3’ün solunda 2, sağında 4 bulunur.
+
+8’in sağında 9 bulunur.
