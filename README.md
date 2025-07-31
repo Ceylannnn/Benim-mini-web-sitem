@@ -1,3 +1,6 @@
-# Benim-mini-web-sitem
+# Projeler
 
-file:///C:/Users/Ceylan/OneDrive/Masa%C3%BCst%C3%BC/index.html bu sosyanın url si bu mu oluyor
+file:///C:/Users/Ceylan/OneDrive/Masa%C3%BCst%C3%BC/index.html
+
+file:///C:/Users/Ceylan/OneDrive/Masa%C3%BCst%C3%BC/goggle.html
+
